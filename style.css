@@ -12,7 +12,7 @@ body {
 	margin: 0;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	min-height: 100vh;
-	background: url('img-2.avif') center/cover no-repeat;
+	background: url('img/img-2.avif') center/cover no-repeat;
 }
 
 .todo__wrapper {
