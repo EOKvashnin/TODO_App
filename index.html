@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer type="module"></script>
+		<script src="quote.js" defer type="module"></script>
+
+		<title>TODO</title>
+	</head>
+	<body>
+		<div class="todo__wrapper">
+			<section class="qoute">
+				<p class="quote-title">Мудрость дня:</p>
+				<p class="quote-text" id="quote"></p>
+			</section>
+			<section class="time-container">
+				<div id="current-time" class="current-time">Time</div>
+				<div id="day-of-week" class="dayOfWeek">DAYOFWEEK</div>
+				<div id="current-date" class="current-date">Date</div>
+			</section>
+			<h1>Список задач</h1>
+			<div class="container">
+				<input
+					type="text"
+					class="search-input"
+					placeholder="Add todo..."
+					data-add-todo-input
+				/>
+			</div>
+			<div
+				class="todo-container"
+				id="todo-container"
+				data-todos-container
+			></div>
+		</div>
+	</body>
+</html>
