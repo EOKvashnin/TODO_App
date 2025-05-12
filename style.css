@@ -164,7 +164,7 @@ body {
 }
 
 .todo-item span {
-	pointer-events: none; // позволят кликать по элементу, когда кликаешь по тексту
+	pointer-events: none; /*позволят кликать по элементу, когда кликаешь по тексту*/
 	user-select: none;
 }
 
