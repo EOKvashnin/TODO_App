@@ -24,100 +24,99 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 1em;
-
 	box-shadow: rgba(19, 19, 19, 0.567) 6px 2px 16px 0px,
 		rgba(5, 5, 5, 0.67) -6px -2px 16px 0px;
 	backdrop-filter: blur(2px);
-
-	.quote-wrapper {
-		width: 95%;
-		padding: 5px 10px;
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-
-		* {
-			color: #b3c6c4;
-			margin: 0;
-		}
-
-		.quote-title {
-			font-weight: 600;
-		}
-		.quote-text {
-			margin-bottom: 15px;
-			font-weight: 300;
-		}
-
-		&::after {
-			content: '';
-			width: 70%;
-			height: 1px;
-			background-color: #beb4b466;
-		}
-	}
-
-	.time-container {
-		margin: 10px auto;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		color: #fff;
-
-		.current-date {
-			font-weight: 100;
-			color: lightgrey;
-			text-shadow: 1px 4px 3px #100f0f8f;
-		}
-		.current-time {
-			font-size: 80px;
-			color: lightgrey;
-			text-shadow: 1px 4px 3px #100f0f8f;
-		}
-		.dayOfWeek {
-			font-weight: 100;
-			font-size: 30px;
-			color: lightgrey;
-			letter-spacing: 8px;
-			text-transform: uppercase;
-			text-shadow: 1px 4px 3px #100f0f8f;
-		}
-	}
-
-	h1 {
-		margin: 0;
-		padding: 0 0 0 0;
-		font-size: 40px;
-		text-transform: uppercase;
-		font-weight: 300;
-
-		color: #fff;
-		text-shadow: 1px 4px 3px #100f0f8f;
-		user-select: none;
-		text-align: center;
-	}
-
-	.container {
-		padding: 10px 10px 10px 10px;
-		margin: 0 auto;
-		width: 100%;
-		max-width: 400px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 20px;
-	}
 }
 
-.todo-container {
-	.todo-item {
-		color: #fff;
-	}
+.todo__wrapper .quote-wrapper {
+	width: 95%;
+	padding: 5px 10px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.todo__wrapper .quote-wrapper * {
+	color: #b3c6c4;
+	margin: 0;
+}
+
+.todo__wrapper .quote-wrapper .quote-title {
+	font-weight: 600;
+}
+
+.todo__wrapper .quote-wrapper .quote-text {
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+
+.todo__wrapper .quote-wrapper::after {
+	content: '';
+	width: 70%;
+	height: 1px;
+	background-color: #beb4b466;
+}
+
+.todo__wrapper .time-container {
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.todo__wrapper .time-container .current-date {
+	font-weight: 100;
+	color: lightgrey;
+	text-shadow: 1px 4px 3px #100f0f8f;
+}
+
+.todo__wrapper .time-container .current-time {
+	font-size: 80px;
+	color: lightgrey;
+	text-shadow: 1px 4px 3px #100f0f8f;
+}
+
+.todo__wrapper .time-container .dayOfWeek {
+	font-weight: 100;
+	font-size: 30px;
+	color: lightgrey;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	text-shadow: 1px 4px 3px #100f0f8f;
+}
+
+.todo__wrapper h1 {
+	margin: 0;
+	padding: 0 0 0 0;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #fff;
+	text-shadow: 1px 4px 3px #100f0f8f;
+	user-select: none;
+	text-align: center;
+}
+
+.todo__wrapper .container {
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.todo-container .todo-item {
+	color: #fff;
 }
 
 .search-input {
@@ -132,17 +131,18 @@ body {
 	font-size: 16px;
 	color: #fff;
 	transition: 0.22s box-shadow;
+}
 
-	&::placeholder {
-		color: #d6d5d5;
-		font-size: 16px;
-		font-style: italic;
-		font-weight: 100;
-	}
-	&:focus-visible {
-		box-shadow: 0 0 20px 5px var(--neon-outer),
-			inset 0 0 15px 5px var(--neon-inner);
-	}
+.search-input::placeholder {
+	color: #d6d5d5;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.search-input:focus-visible {
+	box-shadow: 0 0 20px 5px var(--neon-outer),
+		inset 0 0 15px 5px var(--neon-inner);
 }
 
 .todo-container {
@@ -168,7 +168,7 @@ body {
 }
 
 .todo-item span {
-	pointer-events: none; /*позволят кликать по элементу, когда кликаешь по тексту*/
+	pointer-events: none;
 	user-select: none;
 }
 
