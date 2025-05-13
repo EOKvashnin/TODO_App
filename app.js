@@ -162,4 +162,4 @@ class TodoApp {
 
 new TodoApp()
 setInterval(() => DateTimeHelper.updateDateTime(), 1000)
-dailyQuote()
+setInterval(() => dailyQuote(), 7200000)
