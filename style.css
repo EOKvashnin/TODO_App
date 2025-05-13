@@ -79,7 +79,8 @@ body {
 		}
 		.dayOfWeek {
 			font-weight: 300;
-			font-size: 25px;
+			font-size: 28px;
+			letter-spacing: 7px;
 			text-transform: uppercase;
 			text-shadow: 1px 4px 3px #100f0f8f;
 		}
