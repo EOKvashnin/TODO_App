@@ -24,9 +24,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 1em;
-	background: rgba(255, 255, 255, 0.2) -1.3%;
+
 	box-shadow: rgba(19, 19, 19, 0.567) 6px 2px 16px 0px,
 		rgba(5, 5, 5, 0.67) -6px -2px 16px 0px;
+	backdrop-filter: blur(2px);
 
 	.quote-wrapper {
 		width: 95%;
@@ -53,7 +54,7 @@ body {
 
 		&::after {
 			content: '';
-			width: 90%;
+			width: 70%;
 			height: 1px;
 			background-color: #beb4b466;
 		}
@@ -78,9 +79,10 @@ body {
 			text-shadow: 1px 4px 3px #100f0f8f;
 		}
 		.dayOfWeek {
-			font-weight: 300;
-			font-size: 28px;
-			letter-spacing: 7px;
+			font-weight: 100;
+			font-size: 30px;
+			color: lightgrey;
+			letter-spacing: 8px;
 			text-transform: uppercase;
 			text-shadow: 1px 4px 3px #100f0f8f;
 		}
@@ -92,6 +94,7 @@ body {
 		font-size: 40px;
 		text-transform: uppercase;
 		font-weight: 300;
+
 		color: #fff;
 		text-shadow: 1px 4px 3px #100f0f8f;
 		user-select: none;
@@ -127,7 +130,7 @@ body {
 	border: none;
 	outline: 1px solid grey;
 	font-size: 16px;
-	color: #100f0f;
+	color: #fff;
 	transition: 0.22s box-shadow;
 
 	&::placeholder {
