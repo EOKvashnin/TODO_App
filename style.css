@@ -134,8 +134,9 @@ body {
 }
 
 .search-input::placeholder {
-	color: #d6d5d5;
+	color: #c0bebe;
 	font-size: 16px;
+	font-size: 13px;
 	font-style: italic;
 	font-weight: 100;
 }
@@ -185,5 +186,5 @@ body {
 	border: 1px solid var(--neon-inner);
 	box-shadow: 0 0 10px 5px var(--neon-outer),
 		inset 0 0 15px 5px var(--neon-inner);
-	color: #353333;
+	color: lightgrey;
 }
